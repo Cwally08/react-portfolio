@@ -1,0 +1,47 @@
+.tag-cloud-container {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tagcloud:nth-child(2) {
+      display: none;
+    }
+    .tagcloud:nth-child(3) {
+      display: none;
+    }
+    .tagcloud:nth-child(4) {
+      display: none;
+    }
+  
+    h1 {
+      color: #e2e2e2;
+      font-family: "Coolvetica";
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .tag-cloud-container {
+      
+      position: relative;
+      margin: 0;
+      width: 100% ;
+      box-sizing: border-box;
+      vertical-align: middle;
+      overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+
+    h1 {
+        font-size: 15px;
+  }
+}
+}

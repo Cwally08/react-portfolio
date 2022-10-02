@@ -1,0 +1,99 @@
+
+.menu-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .menu {
+    display: block;
+    visibility: visible;
+    top: 100px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .menu .div li {
+    position: absolute;
+    top: 30%;
+    left: 150%;
+    list-style-type: none;
+    transform-origin: 250px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(120px);
+    z-index: 1000;
+  }
+  
+  .menu .div li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: -40px;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#d4d8e7 100%);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    color: #111;
+    transition: 0.5s;
+    font-size: 30px;
+    
+    
+  }
+  .toggle {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    font-size: 2em;
+    transition: transform 5s;
+    overflow: hidden;
+    top: 38%;
+    right: 20%;
+    bottom: 65%;
+    left: 150%;
+    margin: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      margin: 20px;
+    }
+  }
+  .menu.active .div .toggle {
+    transform: rotate(-315deg);
+  }
+  .menu.active .div li {
+    left: 127%;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+  }
+  .button--flex{
+    color: #f1cf72;
+    background: 0 0;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #f1cf72;
+    float: right;
+    border-radius: 4px;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+        background: #f1cf72;
+        color: #333;
+    }
+}
+
