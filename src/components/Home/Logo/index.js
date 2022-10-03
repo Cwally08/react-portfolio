@@ -6,8 +6,8 @@ import gsap from 'gsap-trial'
 
 const Logo = () => {
     const bgRef = useRef()
-    const outlineLogoRef = useRef()
-    const solidLogoRef = useRef()
+    //const outlineLogoRef = useRef()
+    //const solidLogoRef = useRef()
 
    useEffect(() => {
     gsap.registerPlugin(DrawSVGPlugin)
@@ -17,10 +17,10 @@ const Logo = () => {
         duration:1,
         opacity: 1,
     })
-    .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 20,
-    })
+    //.from(outlineLogoRef.current, {
+        //drawSVG: 0,
+        //duration: 20,
+    //})
     gsap.fromTo(
         solidLogoRef.current,
         {
@@ -49,7 +49,7 @@ const Logo = () => {
                 fill="none"
             >
                 <path 
-                ref={outlineLogoRef}
+                //ref={outlineLogoRef}
                 d="M2631 3558 c-47 -13 -149 -118 -195 -199 -134 -243 -270 -814 -330
                 -1389 l-12 -125 -8 65 c-16 141 -56 382 -82 491 -110 475 -155 625 -231 779
                 -32 65 -65 113 -103 153 -51 52 -60 57 -100 57 -135 0 -273 -257 -469 -877
