@@ -20,7 +20,7 @@ const [classList, setClassList] = useState("menu-hidden");
  //const [isToggle, setIsToggle] = useState(false);
 setTimeout(() => {
     setClassList("menu");
-  }, 2000);
+  }, 3000);
 
   const circularButton = () => {
     //setIsToggle(!isToggle);
